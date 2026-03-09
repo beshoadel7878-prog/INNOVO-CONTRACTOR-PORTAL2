@@ -1,0 +1,1548 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="./">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Innovo Subcontractor Portal - Quality Forms and Procedures">
+<meta name="keywords" content="">
+<meta name="author" content="innovo">
+<meta name="robots" content="index, follow"><title>Innovo | Quality Forms</title>
+<meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<link rel="shortcut icon" href="./assets/img/favicon.ico">
+<link rel="stylesheet" href="./assets/css/plugins.min.css">
+<link rel="stylesheet" href="./assets/css/style.min.css?=v2526551">
+<link rel="stylesheet" href="./assets/css/global.min.css?v=251548">
+<link rel="stylesheet" href="./assets/css/portal-overrides.css?v=20260225">
+
+<link rel="canonical" href="https://www.innovogroup.com/">
+
+<!-- Google Tag Manager -->
+<script>
+(function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-KPF3PFQP');
+</script>
+<!-- End Google Tag Manager -->
+
+    <style>
+        /* ===== Ø£Ù†Ù…Ø§Ø· Ø¥Ø¶Ø§ÙÙŠØ© Ù„ØµÙØ­Ø© QR ===== */
+        .qr-page {
+            background:
+                radial-gradient(circle at 12% 0%, rgba(18, 32, 35, 0.03) 0%, transparent 55%),
+                radial-gradient(circle at 88% 18%, rgba(18, 32, 35, 0.02) 0%, transparent 50%),
+                linear-gradient(180deg, #ffffff 0%, #f8f9fa 100%) !important;
+        }
+
+        .qr-container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 36px;
+            padding: clamp(1.5rem, 3vw, 3rem);
+            box-shadow: 0 30px 70px -45px rgba(18, 32, 35, 0.28);
+            border: 1px solid rgba(18, 32, 35, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+            isolation: isolate;
+        }
+
+        @media (max-width: 576px) {
+            .qr-container {
+                border-radius: 24px;
+                padding: 1.25rem;
+            }
+        }
+        
+        .qr-container::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(18, 32, 35, 0.02) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .qr-container > * {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .success-badge {
+            display: inline-block;
+            background: rgba(18, 32, 35, 0.05);
+            border: 1px solid rgba(18, 32, 35, 0.15);
+            color: #122023;
+            font-weight: 600;
+            padding: 0.5rem 2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+        }
+        
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: #122023;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            animation: pulse 3s ease-in-out infinite;
+        }
+        
+        .success-icon i {
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(18, 32, 35, 0.3); }
+            50% { transform: scale(1.04); box-shadow: 0 0 0 12px rgba(18, 32, 35, 0); }
+        }
+        
+        .main-title {
+            font-size: clamp(2.05rem, 2.6vw, 2.8rem);
+            font-weight: 700;
+            color: #122023;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .sub-title {
+            color: #122023;
+            font-size: 1.08rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.7;
+        }
+        
+        .qr-card {
+            background: linear-gradient(135deg, rgba(18, 32, 35, 0.02) 0%, #ffffff 45%, #f8f9fa 100%);
+            border-radius: 28px;
+            padding: 2.25rem;
+            margin: 0;
+            border: 1px solid rgba(18, 32, 35, 0.08);
+            box-shadow: 0 25px 50px -45px rgba(18, 32, 35, 0.35);
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (max-width: 576px) {
+            .qr-card {
+                border-radius: 22px;
+                padding: 1.5rem;
+            }
+        }
+        
+        .qr-label {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #122023;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .qr-box {
+            width: clamp(240px, 26vw, 320px);
+            height: clamp(240px, 26vw, 320px);
+            margin: 0 auto 1.5rem;
+            background: #122023;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .qr-box::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(135deg, #122023 0%, #122023 100%);
+            opacity: 0.5;
+            z-index: 1;
+        }
+        
+        .qr-code {
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            background: #ffffff;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .qr-code span {
+            font-family: monospace;
+            font-size: 1rem;
+            color: #122023;
+            text-align: center;
+            line-height: 1.5;
+        }
+        
+        .qr-footer {
+            text-align: center;
+            color: #122023;
+            font-weight: 500;
+            margin-top: 1rem;
+        }
+        
+        .qr-footer small {
+            color: #122023;
+            font-size: 0.85rem;
+            opacity: 0.6;
+        }
+        
+        .instructions {
+            background: #ffffff;
+            border-radius: 28px;
+            padding: 1.35rem;
+            box-shadow: 0 20px 40px -28px rgba(18, 32, 35, 0.28);
+            border: 1px solid rgba(18, 32, 35, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 0.95rem;
+            height: 100%;
+        }
+
+        .action-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.85rem;
+        }
+
+        .action-link {
+            --action-color: #122023;
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 0.95rem;
+            padding: 0.95rem 1rem;
+            border-radius: 18px;
+            border: 1px solid rgba(18, 32, 35, 0.12);
+            background: #ffffff;
+            text-decoration: none;
+            color: #122023;
+            transition: all 0.22s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .action-link::before {
+            content: '';
+            position: absolute;
+            inset: 0 auto 0 0;
+            width: 4px;
+            background: var(--action-color);
+            opacity: 0.65;
+            border-radius: 0 8px 8px 0;
+            transition: all 0.22s ease;
+        }
+
+        .action-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 26px -20px rgba(18, 32, 35, 0.46);
+            border-color: rgba(18, 32, 35, 0.25);
+        }
+
+        .action-link:hover::before {
+            width: 6px;
+            opacity: 1;
+        }
+
+        .action-link.active {
+            border-color: rgba(18, 32, 35, 0.25);
+            box-shadow: 0 16px 30px -24px rgba(18, 32, 35, 0.56);
+            background: linear-gradient(135deg, rgba(18, 32, 35, 0.04), #ffffff);
+        }
+
+        .action-link.active::before {
+            width: 6px;
+            opacity: 1;
+        }
+
+        .action-link .instruction-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            background: rgba(18, 32, 35, 0.08);
+            color: var(--action-color);
+            font-size: 1.25rem;
+            transition: all 0.22s ease;
+        }
+
+        .action-link .instruction-text small {
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .action-link:hover .instruction-icon,
+        .action-link.active .instruction-icon {
+            background: rgba(18, 32, 35, 0.12);
+        }
+
+        .action-arrow {
+            width: 30px;
+            height: 30px;
+            border-radius: 10px;
+            border: 1px solid rgba(18, 32, 35, 0.14);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #122023;
+            font-size: 0.82rem;
+            background: #ffffff;
+            transition: all 0.2s ease;
+        }
+
+        .action-link:hover .action-arrow,
+        .action-link.active .action-arrow {
+            background: #122023;
+            color: #ffffff;
+            border-color: #122023;
+            transform: translateX(2px);
+        }
+
+        .action-link-inspection {
+            --action-color: #1d4ed8;
+        }
+
+        .action-link-material {
+            --action-color: #0f766e;
+        }
+
+        .action-link-ncr {
+            --action-color: #b91c1c;
+        }
+
+        .topic-note {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 0.9rem;
+            color: #122023;
+            background: rgba(18, 32, 35, 0.04);
+            border: 1px solid rgba(18, 32, 35, 0.1);
+            border-radius: 12px;
+            padding: 0.7rem 0.85rem;
+        }
+
+        .topic-note i {
+            color: #c5a572;
+        }
+
+        .topic-panel {
+            display: none;
+            border: 1px solid rgba(18, 32, 35, 0.11);
+            border-radius: 18px;
+            padding: 1rem;
+            background: linear-gradient(160deg, #ffffff 0%, #fbfcfd 100%);
+        }
+
+        .topic-panel.active {
+            display: block;
+            animation: topicFade 0.22s ease;
+        }
+
+        .topic-panel-title {
+            margin: 0 0 0.35rem;
+            font-size: 1.02rem;
+            font-weight: 700;
+            color: #122023;
+        }
+
+        .topic-panel-text {
+            margin: 0 0 0.9rem;
+            color: #5f6c72;
+            font-size: 0.9rem;
+            line-height: 1.55;
+        }
+
+        .portal-form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+
+        .field-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.35rem;
+        }
+
+        .field-group-full {
+            grid-column: 1 / -1;
+        }
+
+        .field-label {
+            color: #122023;
+            font-size: 0.83rem;
+            font-weight: 600;
+        }
+
+        .portal-input,
+        .portal-select,
+        .portal-textarea {
+            width: 100%;
+            border: 1px solid rgba(18, 32, 35, 0.16);
+            border-radius: 12px;
+            padding: 0.65rem 0.75rem;
+            color: #122023;
+            background: #ffffff;
+            font-size: 0.88rem;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .portal-textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .portal-input:focus,
+        .portal-select:focus,
+        .portal-textarea:focus {
+            outline: none;
+            border-color: #122023;
+            box-shadow: 0 0 0 3px rgba(18, 32, 35, 0.12);
+        }
+
+        .file-help {
+            color: #5f6c72;
+            font-size: 0.76rem;
+            margin: 0;
+        }
+
+        .check-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.55rem;
+            padding: 0.7rem;
+            border-radius: 12px;
+            border: 1px solid rgba(18, 32, 35, 0.12);
+            background: rgba(18, 32, 35, 0.03);
+        }
+
+        .check-row input[type="checkbox"] {
+            margin-top: 0.1rem;
+            accent-color: #122023;
+        }
+
+        .check-row label {
+            margin: 0;
+            color: #122023;
+            font-size: 0.82rem;
+            line-height: 1.4;
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 0.6rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-submit {
+            border: 1px solid #122023;
+            background: #122023;
+            color: #ffffff;
+            border-radius: 999px;
+            padding: 0.58rem 1.15rem;
+            font-size: 0.84rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.2s ease;
+        }
+
+        .btn-submit:hover {
+            background: transparent;
+            color: #122023;
+        }
+
+        .btn-clear {
+            border: 1px solid rgba(18, 32, 35, 0.3);
+            background: #ffffff;
+            color: #122023;
+            border-radius: 999px;
+            padding: 0.58rem 1.15rem;
+            font-size: 0.84rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            transition: all 0.2s ease;
+        }
+
+        .btn-clear:hover {
+            border-color: #122023;
+        }
+
+        .form-feedback {
+            display: none;
+            margin: 0;
+            padding: 0.6rem 0.7rem;
+            border-radius: 10px;
+            font-size: 0.8rem;
+            color: #0f766e;
+            background: rgba(15, 118, 110, 0.11);
+            border: 1px solid rgba(15, 118, 110, 0.25);
+        }
+
+        .form-feedback.is-visible {
+            display: block;
+        }
+
+        @keyframes topicFade {
+            from {
+                opacity: 0;
+                transform: translateY(6px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .instruction-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #f0f3f5;
+        }
+
+        .instruction-item:last-child {
+            border-bottom: none;
+        }
+
+        .instruction-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(18, 32, 35, 0.05);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #122023;
+            font-size: 1.2rem;
+        }
+
+        .instruction-text {
+            flex: 1;
+        }
+
+        .instruction-text strong {
+            display: block;
+            color: #122023;
+            font-size: 1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .instruction-text small {
+            color: #5f6c72;
+            font-size: 0.85rem;
+        }
+        
+        .ppe-list {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            justify-content: space-between;
+            margin: 0;
+            width: 100%;
+        }
+        
+        .ppe-item {
+            background: #ffffff;
+            border: 1px solid rgba(18, 32, 35, 0.08);
+            border-radius: 20px;
+            padding: 1rem 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: #122023;
+            font-weight: 500;
+            justify-content: center;
+            flex: 1;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .ppe-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -12px #122023;
+            border-color: rgba(18, 32, 35, 0.2);
+        }
+        
+        .ppe-item i {
+            color: #122023;
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .btn-download {
+            background: #122023;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 1rem 3rem;
+            border-radius: 100px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.1rem;
+            border: 2px solid #122023;
+            width: 100%;
+            justify-content: center;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .btn-download:hover {
+            background: transparent;
+            color: #122023;
+            transform: translateY(-2px);
+        }
+        
+        .btn-download:hover i {
+            transform: translateY(-2px);
+            color: #122023;
+        }
+        
+        .btn-home {
+            background: transparent;
+            color: #122023;
+            font-weight: 600;
+            padding: 1rem 3rem;
+            border-radius: 100px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.1rem;
+            border: 2px solid #122023;
+            width: 100%;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 576px) {
+            .btn-download,
+            .btn-home {
+                padding: 0.9rem 1.25rem;
+                font-size: 1rem;
+            }
+            
+            .ppe-list {
+                flex-direction: column;
+            }
+
+            .buttons-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .btn-home:hover {
+            background: #122023;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+        
+        .btn-home:hover i {
+            transform: translateX(-3px);
+            color: #ffffff;
+        }
+        
+        .buttons-wrapper {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            justify-content: stretch;
+            margin-top: 1rem;
+        }
+        
+        .warning-note {
+            font-size: 0.9rem;
+            color: #122023;
+            text-align: center;
+            margin-top: 1rem;
+            opacity: 0.6;
+        }
+
+        /* ===== Layout: side-by-side ===== */
+        .qr-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            align-items: start;
+            margin-top: 2.25rem;
+        }
+
+        @media (min-width: 992px) {
+            .qr-grid {
+                grid-template-columns: minmax(400px, 1fr) minmax(450px, 1fr);
+                gap: 1.5rem;
+            }
+
+            .qr-col-left {
+                padding-right: 1.5rem;
+            }
+
+            .qr-col-right {
+                padding-left: 1.5rem;
+                border-left: 1px solid rgba(18, 32, 35, 0.08);
+            }
+
+            [dir="rtl"] .qr-col-left {
+                padding-right: 0;
+                padding-left: 1.5rem;
+            }
+
+            [dir="rtl"] .qr-col-right {
+                padding-left: 0;
+                padding-right: 1.5rem;
+                border-left: 0;
+                border-right: 1px solid rgba(18, 32, 35, 0.08);
+            }
+        }
+
+        .qr-col-left,
+        .qr-col-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75rem;
+            min-width: 0;
+        }
+
+        .qr-col-left .qr-card {
+            height: 100%;
+        }
+
+        .qr-col-right .buttons-wrapper {
+            margin-top: auto;
+        }
+
+        /* Make better use of space */
+        .container-fluid {
+            padding-left: 2rem !important;
+            padding-right: 2rem !important;
+        }
+
+        @media (min-width: 1400px) {
+            .container-fluid {
+                padding-left: 3rem !important;
+                padding-right: 3rem !important;
+            }
+        }
+
+        /* Vehicle preview styling */
+        .vehicle-preview {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255,255,255,0.7);
+            border-radius: 60px;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(18, 32, 35, 0.05);
+            margin-top: 1.5rem;
+        }
+
+        .vehicle-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(18, 32, 35, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #122023;
+            font-size: 1.3rem;
+            animation: pulse 2.5s infinite;
+        }
+
+        .vehicle-details {
+            flex: 1;
+        }
+
+        .vehicle-details .label {
+            font-size: 0.75rem;
+            color: #5f6c72;
+        }
+
+        .vehicle-details .value {
+            font-weight: 600;
+            color: #122023;
+            font-size: 1rem;
+        }
+
+        /* Welcome message styling */
+        .welcome-message {
+            background: linear-gradient(120deg, rgba(18, 32, 35, 0.02), #ffffff);
+            border-radius: 28px;
+            padding: 1.8rem;
+            border-left: 6px solid #122023;
+        }
+
+        .welcome-message h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #122023;
+            margin-bottom: 0.8rem;
+        }
+
+        .welcome-message h1 i {
+            color: #122023;
+            font-size: 2rem;
+            margin-left: 0.5rem;
+            opacity: 0.7;
+        }
+
+        .welcome-message p {
+            color: #122023;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+
+        .highlight {
+            background: rgba(18, 32, 35, 0.05);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            display: inline-block;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #122023;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        /* Mobile refinements */
+        @media (max-width: 576px) {
+            .container-fluid {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            .qr-page {
+                padding-top: 100px !important;
+            }
+
+            .success-badge {
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+                padding: 0.4rem 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .success-icon {
+                width: 64px;
+                height: 64px;
+                margin-bottom: 1.5rem;
+            }
+
+            .success-icon i {
+                font-size: 2rem;
+            }
+
+            .main-title {
+                font-size: 1.7rem;
+            }
+
+            .sub-title {
+                font-size: 0.95rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .qr-grid {
+                gap: 1.75rem;
+            }
+
+            .qr-box {
+                width: 100%;
+                max-width: 240px;
+                height: auto;
+                aspect-ratio: 1 / 1;
+            }
+
+            .qr-code span {
+                font-size: 0.9rem;
+            }
+
+            .vehicle-preview {
+                flex-direction: column;
+                align-items: flex-start;
+                border-radius: 24px;
+                gap: 0.75rem;
+                padding: 0.75rem 1rem;
+            }
+
+            .vehicle-preview > i {
+                align-self: flex-start;
+            }
+
+            .instructions {
+                padding: 1.1rem;
+                border-radius: 22px;
+            }
+
+            .action-link {
+                grid-template-columns: auto 1fr;
+                padding: 0.85rem 0.9rem;
+                gap: 0.75rem;
+            }
+
+            .action-link .instruction-icon {
+                width: 36px;
+                height: 36px;
+                border-radius: 12px;
+                font-size: 1.05rem;
+            }
+
+            .action-arrow {
+                display: none;
+            }
+
+            .topic-panel {
+                padding: 0.85rem;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 0.65rem;
+            }
+
+            .portal-input,
+            .portal-select,
+            .portal-textarea {
+                font-size: 0.85rem;
+            }
+
+            .form-actions {
+                flex-direction: column;
+            }
+
+            .btn-submit,
+            .btn-clear {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .warning-note {
+                font-size: 0.8rem;
+            }
+
+            .buttons-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPF3PFQP" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- ======= Ø§Ù„Ù‡ÙŠØ¯Ø± (Ù…Ø·Ø§Ø¨Ù‚ Ù„Ù„Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ø£ØµÙ„ÙŠ) ======= -->
+<header class="wrapper bg-soft-primary">
+    <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark caret-none">
+        <div class="container-fluid flex-lg-column px-lg-8">
+            <div class="navbar-collapse-wrapper bg-secondary d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center mnavsc">
+                <div class="navbar-brand w-100">
+                    <a href="https://www.innovogroup.com" aria-label="innovogroup">
+                        <img src="./assets/img/logo.svg" srcset="./assets/img/logo.svg 2x" alt="">
+                    </a>
+                </div>
+                <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                    <div class="offcanvas-header d-lg-none">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                        <ul class="navbar-nav mnnav">
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="about-us">Who We Are <i class="fa fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="dropdown-item" href="about-us"><img src="./assets/img/icons/menu/who-we-are/company-overview.svg" class="mnuic" alt=""> About Us</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="board-of-directors"><img src="./assets/img/icons/menu/who-we-are/board-of-directors.svg" class="mnuic" alt="">Board of Directors</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="our-people"><img src="./assets/img/icons/menu/who-we-are/our-people.svg" class="mnuic" alt=""> Our People</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="construction">What We Do <i class="fa fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown dropdown-submenu dropend">
+                                        <a class="dropdown-item dropdown-toggle d-none d-lg-block" href="construction"><img src="./assets/img/icons/menu/our-industries/construction.svg" class="mnuic" alt="">Construction</a>
+                                        <ul class="dropdown-menu sblst">
+                                            <li class="nav-item"><a class="dropdown-item" href="construction">Build</a></li>
+                                            <li class="nav-item"><a class="dropdown-item" href="mep">MEP</a></li>
+                                            <li class="nav-item"><a class="dropdown-item" href="infrastructure-roads-marine-works">Infrastructure, Roads & Marine works</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a class="dropdown-item" href="real-estate-development"><img src="./assets/img/icons/menu/our-industries/real-estate.svg" class="mnuic" alt="">Real Estate Development</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="technology-solutions">Technology Solutions</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="export-finance"><img src="./assets/img/icons/menu/our-industries/capital-projects.svg" class="mnuic" alt="">Export Finance</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="procurement-distribution"><img src="./assets/img/icons/menu/our-industries/procurement-distribution.svg" class="mnuic" alt="">Procurement & Distribution</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="investment-vc"><img src="./assets/img/icons/menu/our-industries/investment-venture-capital.svg" class="mnuic" alt="">Investment & Venture Capital</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="projects">Our Projects</a></li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="innovation">Commitments <i class="fa fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="dropdown-item" href="innovation"><img src="./assets/img/icons/menu/our-commitments/innovation-technology.svg" class="mnuic" alt="">Innovation</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="hse"><img src="./assets/img/icons/menu/our-commitments/health-safety-environment.svg" class="mnuic" alt="">Health, Safety & Environment</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="sustainability">Sustainability <i class="fa fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="dropdown-item" href="sustainability"><img src="./assets/img/icons/menu/sustainability/environment.svg" class="mnuic" alt="">Overview </a></li>
+                                    <li class="dropdown dropdown-submenu dropend">
+                                        <a class="dropdown-item dropdown-toggle d-none d-lg-block" href="esg"><img src="./assets/img/icons/menu/sustainability/environment.svg" class="mnuic" alt="">ESG</a>
+                                        <ul class="dropdown-menu sblst">
+                                            <li class="nav-item"><a class="dropdown-item" href="esg#tab3-1">Environmental</a></li>
+                                            <li class="nav-item"><a class="dropdown-item" href="esg#tab3-2">Social</a></li>
+                                            <li class="nav-item"><a class="dropdown-item" href="esg#tab3-3">Governance</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a class="dropdown-item" href="decarbonization-strategy"><img src="./assets/img/icons/menu/sustainability/carbon-footprint.svg" class="mnuic" alt="">Decarbonisation Strategy</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="un-race-to-zero"><img src="./assets/img/icons/menu/sustainability/un-race-to-zero.svg" class="mnuic" alt="">UN Race to Zero </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Media Centre <i class="fa fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="dropdown-item" href="news">News</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="knowledge-hub">Knowledge Hub</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="gallery">Gallery</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="careers">Careers <i class="fa fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="dropdown-item" href="careers">Working at Innovo </a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://careers.innovogroup.com/">Innovo Careers </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="contact">Contact</a></li>
+                        </ul>
+                        <div class="offcanvas-footer d-lg-none">
+                            <div>
+                                <nav class="nav social social-dark mt-4">
+                                    <a href="https://www.linkedin.com/company/theinnovogroup/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://www.instagram.com/theinnovogroup/" target="_blank"><i class="uil uil-instagram"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=61577709663735" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                                    <a href="https://www.youtube.com/@theinnovogroup" target="_blank"><i class="uil uil-youtube"></i></a>
+                                    <a href="https://x.com/Innovo_Group" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-other d-flex ms-auto">
+                    <ul class="navbar-nav flex-row align-items-center ms-auto">
+                        <li class="nav-item srchbtn">
+                            <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-search"><i class="uil uil-search"></i></a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <button class="hamburger offcanvas-nav-btn"><span></span></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-top bg-light" id="offcanvas-search" data-bs-scroll="true">
+        <div class="container d-flex flex-row py-6">
+            <form class="search-form w-100" method="get" action="search-results.php">
+                <input id="search-form" type="text" name="keyword" class="form-control" placeholder="Type keyword and hit enter" value="">
+            </form>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    </div>
+</header>
+
+        <!-- ===== Ø§Ù„Ù…Ø­ØªÙˆÙ‰ Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠ ===== -->
+        <section class="wrapper bg-white ovrhdn qr-page" style="padding-top: 120px;">
+            <div class="container-fluid py-10 py-lg-15">
+                
+                <div class="qr-container">
+                    <!-- Success Badge -->
+                   
+                    
+                    <!-- Success Icon -->
+                    <div class="success-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    
+                    <!-- Main Title -->
+                    <h1 class="main-title">Quality Forms & Procedures</h1>
+                    <p class="sub-title">Access QA/QC forms and follow the quality process.</p>
+
+                    <div class="qr-grid">
+                        <div class="qr-col-left">
+                    
+                    <!-- Quick Actions Card -->
+                    <div class="qr-card">
+                        <div class="qr-label">Quality Actions</div>
+                        <div class="action-list">
+                            <a class="action-link action-link-inspection active" href="#" data-topic="inspection-request">
+                                <div class="instruction-icon">
+                                    <i class="fas fa-clipboard-list"></i>
+                                </div>
+                                <div class="instruction-text">
+                                    <strong>Inspection Request</strong>
+                                    <small>Submit work ready for inspection.</small>
+                                </div>
+                                <span class="action-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                            <a class="action-link action-link-material" href="#" data-topic="material-submittal">
+                                <div class="instruction-icon">
+                                    <i class="fas fa-boxes-stacked"></i>
+                                </div>
+                                <div class="instruction-text">
+                                    <strong>Material Submittal</strong>
+                                    <small>Upload product data and certificates.</small>
+                                </div>
+                                <span class="action-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                            <a class="action-link action-link-ncr" href="#" data-topic="ncr-action">
+                                <div class="instruction-icon">
+                                    <i class="fas fa-triangle-exclamation"></i>
+                                </div>
+                                <div class="instruction-text">
+                                    <strong>NCR / Corrective Action</strong>
+                                    <small>Raise non-conformance and actions.</small>
+                                </div>
+                                <span class="action-arrow" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                   
+                    </div>
+                        </div>
+                        <div class="qr-col-right">
+
+                    <!-- Guidance -->
+                    <div class="instructions">
+                        
+                        <div class="topic-panel active" data-topic="inspection-request">
+                            <h4 class="topic-panel-title">Inspection Request</h4>
+                            <p class="topic-panel-text">Provide location, drawing reference, and readiness status before requesting inspection.</p>
+                            <form class="portal-form" data-action-label="Inspection request">
+                                <div class="form-grid">
+                                    <div class="field-group">
+                                        <label class="field-label" for="ir-project">Project Name</label>
+                                        <input class="portal-input" id="ir-project" name="project_name" type="text" required>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ir-discipline">Discipline</label>
+                                        <select class="portal-select" id="ir-discipline" name="discipline" required>
+                                            <option value="">Select discipline</option>
+                                            <option value="civil">Civil</option>
+                                            <option value="architectural">Architectural</option>
+                                            <option value="mechanical">Mechanical</option>
+                                            <option value="electrical">Electrical</option>
+                                            <option value="plumbing">Plumbing</option>
+                                        </select>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ir-location">Location / Area</label>
+                                        <input class="portal-input" id="ir-location" name="location_area" type="text" required>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ir-drawing-ref">Drawing Reference</label>
+                                        <input class="portal-input" id="ir-drawing-ref" name="drawing_reference" type="text" required>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ir-itp-ref">ITP / Checklist Ref</label>
+                                        <input class="portal-input" id="ir-itp-ref" name="itp_checklist_reference" type="text">
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ir-date">Requested Inspection Date</label>
+                                        <input class="portal-input" id="ir-date" name="inspection_date" type="date" required>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ir-readiness">Readiness Status</label>
+                                        <select class="portal-select" id="ir-readiness" name="readiness_status" required>
+                                            <option value="">Select status</option>
+                                            <option value="ready">Ready for inspection</option>
+                                            <option value="partially-ready">Partially ready</option>
+                                            <option value="pending-closure">Pending closure item</option>
+                                        </select>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ir-shift">Shift</label>
+                                        <select class="portal-select" id="ir-shift" name="shift">
+                                            <option value="">Select shift</option>
+                                            <option value="day">Day Shift</option>
+                                            <option value="night">Night Shift</option>
+                                        </select>
+                                    </div>
+                                    <div class="field-group field-group-full">
+                                        <label class="field-label" for="ir-work-desc">Work Description</label>
+                                        <textarea class="portal-textarea" id="ir-work-desc" name="work_description" placeholder="Describe the work package and exact scope ready for inspection." required></textarea>
+                                    </div>
+                                    <div class="field-group field-group-full">
+                                        <label class="field-label" for="ir-attachments">Attachments</label>
+                                        <input class="portal-input" id="ir-attachments" name="attachments" type="file" multiple>
+                                        <p class="file-help">Attach marked drawings, checklist evidence, and readiness photos if available.</p>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button class="btn-submit" type="submit">Submit Inspection Request</button>
+                                    <button class="btn-clear" type="reset">Clear</button>
+                                </div>
+                                <p class="form-feedback" aria-live="polite"></p>
+                            </form>
+                        </div>
+                        <div class="topic-panel" data-topic="material-submittal">
+                            <h4 class="topic-panel-title">Material Submittal</h4>
+                            <p class="topic-panel-text">Attach datasheets, test certificates, and approvals to speed up technical review.</p>
+                            <form class="portal-form" data-action-label="Material submittal">
+                                <div class="form-grid">
+                                    <div class="field-group">
+                                        <label class="field-label" for="ms-project">Project Name</label>
+                                        <input class="portal-input" id="ms-project" name="project_name" type="text" required>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ms-package">Material / Package Name</label>
+                                        <input class="portal-input" id="ms-package" name="material_package_name" type="text" required>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ms-supplier">Manufacturer / Supplier</label>
+                                        <input class="portal-input" id="ms-supplier" name="manufacturer_supplier" type="text" required>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ms-spec">Specification Section</label>
+                                        <input class="portal-input" id="ms-spec" name="specification_section" type="text" required>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ms-drawing">Drawing Reference</label>
+                                        <input class="portal-input" id="ms-drawing" name="drawing_reference" type="text">
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ms-submittal-type">Submittal Type</label>
+                                        <select class="portal-select" id="ms-submittal-type" name="submittal_type" required>
+                                            <option value="">Select type</option>
+                                            <option value="new">New Submittal</option>
+                                            <option value="resubmittal">Re-Submittal</option>
+                                            <option value="alternative">Alternative Proposal</option>
+                                        </select>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ms-needed-date">Required On-Site Date</label>
+                                        <input class="portal-input" id="ms-needed-date" name="required_on_site_date" type="date">
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ms-priority">Priority</label>
+                                        <select class="portal-select" id="ms-priority" name="priority">
+                                            <option value="">Select priority</option>
+                                            <option value="normal">Normal</option>
+                                            <option value="urgent">Urgent</option>
+                                            <option value="critical">Critical</option>
+                                        </select>
+                                    </div>
+                                    <div class="field-group field-group-full">
+                                        <label class="field-label" for="ms-datasheets">Datasheets / Technical Catalogues</label>
+                                        <input class="portal-input" id="ms-datasheets" name="datasheets" type="file" multiple required>
+                                    </div>
+                                    <div class="field-group field-group-full">
+                                        <label class="field-label" for="ms-certificates">Certificates / Test Reports</label>
+                                        <input class="portal-input" id="ms-certificates" name="certificates" type="file" multiple>
+                                    </div>
+                                    <div class="field-group field-group-full">
+                                        <label class="field-label" for="ms-notes">Review Notes</label>
+                                        <textarea class="portal-textarea" id="ms-notes" name="review_notes" placeholder="Mention deviations, technical remarks, or approved alternatives."></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button class="btn-submit" type="submit">Submit Material Submittal</button>
+                                    <button class="btn-clear" type="reset">Clear</button>
+                                </div>
+                                <p class="form-feedback" aria-live="polite"></p>
+                            </form>
+                        </div>
+                        <div class="topic-panel" data-topic="ncr-action">
+                            <h4 class="topic-panel-title">NCR / Corrective Action</h4>
+                            <p class="topic-panel-text">Describe the issue, root cause, and proposed corrective action with clear evidence.</p>
+                            <form class="portal-form" data-action-label="NCR / corrective action">
+                                <div class="form-grid">
+                                    <div class="field-group">
+                                        <label class="field-label" for="ncr-project">Project Name</label>
+                                        <input class="portal-input" id="ncr-project" name="project_name" type="text" required>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ncr-reference">NCR Reference</label>
+                                        <input class="portal-input" id="ncr-reference" name="ncr_reference" type="text">
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ncr-location">Location</label>
+                                        <input class="portal-input" id="ncr-location" name="location" type="text" required>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ncr-category">Category</label>
+                                        <select class="portal-select" id="ncr-category" name="category" required>
+                                            <option value="">Select category</option>
+                                            <option value="workmanship">Workmanship</option>
+                                            <option value="material">Material</option>
+                                            <option value="documentation">Documentation</option>
+                                            <option value="process">Process</option>
+                                        </select>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ncr-date">Date Raised</label>
+                                        <input class="portal-input" id="ncr-date" name="date_raised" type="date" required>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ncr-severity">Severity</label>
+                                        <select class="portal-select" id="ncr-severity" name="severity" required>
+                                            <option value="">Select severity</option>
+                                            <option value="minor">Minor</option>
+                                            <option value="major">Major</option>
+                                            <option value="critical">Critical</option>
+                                        </select>
+                                    </div>
+                                    <div class="field-group field-group-full">
+                                        <label class="field-label" for="ncr-description">Non-Conformance Description</label>
+                                        <textarea class="portal-textarea" id="ncr-description" name="ncr_description" placeholder="Describe what happened, where it happened, and applicable reference." required></textarea>
+                                    </div>
+                                    <div class="field-group field-group-full">
+                                        <label class="field-label" for="ncr-containment">Immediate Containment Action</label>
+                                        <textarea class="portal-textarea" id="ncr-containment" name="containment_action" placeholder="Describe immediate steps taken to isolate or contain the issue."></textarea>
+                                    </div>
+                                    <div class="field-group field-group-full">
+                                        <label class="field-label" for="ncr-root-cause">Root Cause</label>
+                                        <textarea class="portal-textarea" id="ncr-root-cause" name="root_cause" placeholder="Provide root-cause analysis and contributing factors."></textarea>
+                                    </div>
+                                    <div class="field-group field-group-full">
+                                        <label class="field-label" for="ncr-corrective">Corrective Action Plan</label>
+                                        <textarea class="portal-textarea" id="ncr-corrective" name="corrective_action_plan" placeholder="List corrective actions, responsible parties, and completion target." required></textarea>
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ncr-close-date">Target Close Date</label>
+                                        <input class="portal-input" id="ncr-close-date" name="target_close_date" type="date">
+                                    </div>
+                                    <div class="field-group">
+                                        <label class="field-label" for="ncr-evidence">Evidence Attachment</label>
+                                        <input class="portal-input" id="ncr-evidence" name="evidence_attachment" type="file" multiple>
+                                    </div>
+                                    <div class="field-group field-group-full">
+                                        <div class="check-row">
+                                            <input id="ncr-confirm" name="confirmation" type="checkbox" required>
+                                            <label for="ncr-confirm">I confirm that the NCR details and proposed corrective actions are accurate and ready for review.</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button class="btn-submit" type="submit">Submit NCR Action</button>
+                                    <button class="btn-clear" type="reset">Clear</button>
+                                </div>
+                                <p class="form-feedback" aria-live="polite"></p>
+                            </form>
+                        </div>
+                    </div>
+
+            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- ======= Ø§Ù„ÙÙˆØªØ± (Ù…Ø·Ø§Ø¨Ù‚ Ù„Ù„Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ø£ØµÙ„ÙŠ) ======= -->
+<footer class="bg-secondary mnftrs ovrhdn">
+    <div class="container">
+        <div class="row gy-6 gy-lg-0" data-cues="slideInRight">
+            <div class="col-lg-3">
+                <img class="mb-lg-7 mb-5 ftrlg" src="./assets/img/logo.svg" alt=""><br>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <ul class="list-unstyled text-reset mb-0">
+                            <li><a href="about-us">About Us</a></li>
+                            <li><a href="projects">Projects</a></li>
+                            <li><a href="careers">Careers</a></li>
+                            <li><a href="sustainability">Sustainability</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                        <ul class="list-unstyled text-reset mb-0">
+                            <li><a href="innovation">Innovation</a></li>
+                            <li><a href="contact">Contact Us</a></li>
+                            <li><a href="hse">HSE</a></li>
+                            <li><a href="our-people">Our People</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <ul class="list-unstyled text-reset mb-0">
+                            <li><a href="vendor-portal">Vendor Portal</a></li>
+                            <li><a href="assets/pdf/Innovo_Code_of_Business_Conduct_F.pdf" target="_blank">Code of Business Conduct</a></li>
+                            <li><a href="assets/pdf/innovo-i-holding-limited-tax-strategy-2025.pdf" target="_blank">Tax Strategy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="widget text-lg-end">
+                    <nav class="nav social text-md-end d-flex justify-content-lg-end mb-lg-6 mb-6 ftrnvb">
+                        <a href="https://www.linkedin.com/company/theinnovogroup/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/theinnovogroup/" target="_blank"><i class="uil uil-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61577709663735" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/@theinnovogroup" target="_blank"><i class="uil uil-youtube"></i></a>
+                        <a href="https://x.com/Innovo_Group" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="ftrbtm">
+            <div class="row">
+                <div class="col-lg-8 order-lg-2">
+                    <ul class="d-md-flex justify-content-md-end list-unstyle ftrbtmn mb-3 mb-lg-0">
+                        <li><a href="terms-and-conditions">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy">Privacy & Cookie Policy</a></li>
+                        <li><a href="modern-slavery-statement">Modern Slavery Statement</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 order-lg-1">
+                    <p class="mb-0">Â© INNOVO 2026 All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+</div>
+
+    <!-- Ø§Ù„Ø³ÙƒØ±ÙŠØ¨ØªØ§Øª -->
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="./assets/js/plugins-min.js"></script>
+    <script src="./assets/js/theme.js?v=5215155"></script>
+    <script src="./assets/js/global.js?v=5215155"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <script>
+        function setActiveTopic(topicKey) {
+            const actionLinks = document.querySelectorAll('.action-link[data-topic]');
+            const topicPanels = document.querySelectorAll('.topic-panel[data-topic]');
+
+            actionLinks.forEach((link) => {
+                const isActive = link.getAttribute('data-topic') === topicKey;
+                link.classList.toggle('active', isActive);
+            });
+
+            topicPanels.forEach((panel) => {
+                const isActive = panel.getAttribute('data-topic') === topicKey;
+                panel.classList.toggle('active', isActive);
+            });
+        }
+
+        function bindActionLinks() {
+            const actionLinks = document.querySelectorAll('.action-link[data-topic]');
+            actionLinks.forEach((link) => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    const topicKey = this.getAttribute('data-topic');
+                    setActiveTopic(topicKey);
+                });
+            });
+        }
+
+        function bindPortalForms() {
+            const forms = document.querySelectorAll('.portal-form');
+            forms.forEach((form) => {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    const actionLabel = this.getAttribute('data-action-label') || 'Request';
+                    const feedback = this.querySelector('.form-feedback');
+                    if (feedback) {
+                        feedback.textContent = actionLabel + ' saved successfully. The entered data is ready for submission workflow.';
+                        feedback.classList.add('is-visible');
+                    }
+                });
+
+                form.addEventListener('reset', function() {
+                    const feedback = this.querySelector('.form-feedback');
+                    if (feedback) {
+                        feedback.textContent = '';
+                        feedback.classList.remove('is-visible');
+                    }
+                });
+            });
+        }
+
+        function animatePortalBlocks() {
+            const elements = document.querySelectorAll('.qr-card, .instructions, .buttons-wrapper');
+            elements.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    el.style.transition = 'all 0.45s ease';
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, 100 * index);
+            });
+        }
+
+        window.addEventListener('load', function() {
+            bindActionLinks();
+            bindPortalForms();
+            setActiveTopic('inspection-request');
+            animatePortalBlocks();
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
