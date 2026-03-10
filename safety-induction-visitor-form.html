@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="./assets/css/plugins.min.css">
 <link rel="stylesheet" href="./assets/css/style.min.css?=v2526551">
 <link rel="stylesheet" href="./assets/css/global.min.css?v=251548">
-<link rel="stylesheet" href="./assets/css/portal-overrides.css?v=20260225">
+<link rel="stylesheet" href="./assets/css/portal-overrides.css?v=20260310">
 
 <link rel="canonical" href="https://www.innovogroup.com/">
 
@@ -427,6 +427,80 @@
 
             .field-inline .invalid-feedback {
                 grid-column: 1;
+            }
+
+            .form-title {
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+            }
+
+            .section-title {
+                font-size: 1.1rem;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .btn-nav {
+                width: 100%;
+                justify-content: center;
+                padding: 0.75rem 1.5rem;
+            }
+
+            .btn-submit {
+                padding: 0.875rem 1.5rem;
+                font-size: 1rem;
+                margin-top: 1rem;
+            }
+
+            .agreement-item {
+                padding: 0.75rem 1rem;
+            }
+
+            .emergency-contact {
+                padding: 1rem;
+            }
+
+            .visitor-form-grid {
+                gap: 1.5rem;
+            }
+
+            .visitor-col-left,
+            .visitor-col-right {
+                gap: 1.5rem;
+            }
+
+            .recaptcha-box {
+                padding: 1rem 0.25rem;
+                overflow: hidden;
+            }
+
+            .g-recaptcha {
+                transform: scale(0.85);
+                transform-origin: center top;
+                display: inline-block;
+            }
+        }
+
+        @media (max-width: 480px) {
+            section.ovrhdn {
+                padding-top: 75px !important;
+            }
+
+            .form-title {
+                font-size: 1.2rem;
+            }
+
+            .g-recaptcha {
+                transform: scale(0.72);
+                transform-origin: center top;
+            }
+
+            .container.py-10 {
+                padding-top: 2rem !important;
+                padding-bottom: 2rem !important;
             }
         }
     </style>

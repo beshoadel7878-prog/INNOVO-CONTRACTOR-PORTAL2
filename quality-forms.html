@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="./assets/css/plugins.min.css">
 <link rel="stylesheet" href="./assets/css/style.min.css?=v2526551">
 <link rel="stylesheet" href="./assets/css/global.min.css?v=251548">
-<link rel="stylesheet" href="./assets/css/portal-overrides.css?v=20260225">
+<link rel="stylesheet" href="./assets/css/portal-overrides.css?v=20260310">
 
 <link rel="canonical" href="https://www.innovogroup.com/">
 
@@ -979,6 +979,51 @@
 
             .buttons-wrapper {
                 grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== 577–767 px (portrait tablets & large phones) ===== */
+        @media (min-width: 577px) and (max-width: 767px) {
+            .form-grid {
+                grid-template-columns: 1fr;
+                gap: 0.65rem;
+            }
+
+            .portal-input,
+            .portal-select,
+            .portal-textarea {
+                font-size: 16px;
+                min-height: 48px;
+            }
+
+            .portal-textarea {
+                min-height: 90px;
+            }
+
+            .form-actions {
+                flex-direction: column;
+            }
+
+            .btn-submit,
+            .btn-clear {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .action-link {
+                grid-template-columns: auto 1fr;
+                padding: 0.85rem 0.9rem;
+                gap: 0.75rem;
+            }
+
+            .action-link .instruction-icon {
+                width: 36px;
+                height: 36px;
+                font-size: 1.05rem;
+            }
+
+            .action-arrow {
+                display: none;
             }
         }
 

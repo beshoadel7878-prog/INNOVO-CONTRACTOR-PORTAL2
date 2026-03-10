@@ -88,3 +88,354 @@
         margin-left: 0.5rem;
     }
 }
+
+/* =============================================
+   PORTAL-WIDE MOBILE RESPONSIVE IMPROVEMENTS
+   Targets all portal pages (< 768px)
+   ============================================= */
+
+/* ------ Section top-padding (navbar offset) ------ */
+@media (max-width: 767px) {
+    section.wrapper,
+    .wrapper.bg-white {
+        padding-top: 80px !important;
+    }
+
+    /* Reduce heavy vertical padding utilities */
+    .py-10 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+    .py-lg-15 {
+        padding-top: 2.5rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+}
+
+/* ------ Shared card containers ------ */
+@media (max-width: 767px) {
+    .qr-container {
+        border-radius: 20px !important;
+        padding: 1.25rem !important;
+    }
+
+    .qr-card {
+        border-radius: 20px !important;
+        padding: 1.25rem !important;
+    }
+
+    /* Side-by-side grid → single column */
+    .qr-grid {
+        display: block !important;
+    }
+
+    .qr-col-left,
+    .qr-col-right {
+        width: 100% !important;
+    }
+
+    /* Add spacing between stacked grid columns */
+    .qr-col-left {
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+/* ------ Shared typography ------ */
+@media (max-width: 767px) {
+    .main-title {
+        font-size: 1.65rem !important;
+        line-height: 1.25 !important;
+    }
+
+    .sub-title {
+        font-size: 0.95rem !important;
+    }
+
+    .form-title {
+        font-size: 1.45rem !important;
+    }
+
+    .section-title {
+        font-size: 1.05rem !important;
+    }
+
+    /* Bootstrap display-4 is 3.5rem by default — too large on mobile */
+    .display-4 {
+        font-size: 1.9rem !important;
+    }
+}
+
+/* ------ Success icon & badge ------ */
+@media (max-width: 767px) {
+    .success-icon {
+        width: 62px !important;
+        height: 62px !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .success-icon i {
+        font-size: 1.7rem !important;
+    }
+
+    .success-badge {
+        padding: 0.4rem 1.25rem !important;
+        font-size: 0.78rem !important;
+        letter-spacing: 1px !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+/* ------ Shared buttons ------ */
+@media (max-width: 767px) {
+    /* Full-width block buttons on mobile */
+    .btn-submit,
+    .btn-back,
+    .btn-start,
+    .btn-next,
+    .btn-continue {
+        width: 100% !important;
+        justify-content: center !important;
+        padding-left: 1.25rem !important;
+        padding-right: 1.25rem !important;
+    }
+
+    .btn-start,
+    .btn-continue {
+        padding-top: 0.9rem !important;
+        padding-bottom: 0.9rem !important;
+        font-size: 1rem !important;
+    }
+
+    .btn-next {
+        padding-top: 0.85rem !important;
+        padding-bottom: 0.85rem !important;
+        font-size: 0.95rem !important;
+    }
+
+    .btn-submit {
+        padding-top: 0.8rem !important;
+        padding-bottom: 0.8rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    .btn-back {
+        padding-top: 0.65rem !important;
+        padding-bottom: 0.65rem !important;
+        font-size: 0.9rem !important;
+    }
+}
+
+/* ------ Form inputs: touch-friendly (≥ 48 px tap target, no iOS zoom) ------ */
+@media (max-width: 767px) {
+    .form-control,
+    .form-select,
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="number"],
+    select,
+    textarea {
+        font-size: 16px !important; /* prevents iOS auto-zoom */
+        min-height: 48px;
+        border-radius: 12px !important;
+    }
+
+    textarea.form-control,
+    .feedback-card textarea {
+        min-height: 90px !important;
+    }
+
+    .form-group {
+        margin-bottom: 0.85rem !important;
+    }
+
+    .feedback-card input,
+    .feedback-card select {
+        font-size: 16px !important;
+        min-height: 48px !important;
+    }
+}
+
+/* ------ Action link grid (index dashboard) ------ */
+@media (max-width: 479px) {
+    .action-list {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ------ Step cards (safety-induction-start) ------ */
+@media (max-width: 767px) {
+    .step-card {
+        padding: 1.25rem !important;
+        border-radius: 20px !important;
+    }
+
+    .step-number {
+        width: 34px !important;
+        height: 34px !important;
+        line-height: 34px !important;
+        font-size: 0.9rem !important;
+        flex-shrink: 0;
+    }
+
+    .step-title {
+        font-size: 1.05rem !important;
+    }
+
+    .step-description {
+        padding-left: 0 !important;
+        margin-top: 0.65rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    .qr-info {
+        padding: 1.25rem !important;
+        border-radius: 14px !important;
+    }
+
+    .qr-info h4 {
+        font-size: 1rem !important;
+    }
+
+    .qr-info p {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* ------ Video page ------ */
+@media (max-width: 767px) {
+    .video-container {
+        border-radius: 18px !important;
+    }
+
+    .video-info {
+        padding: 1.1rem !important;
+    }
+
+    .warning-message {
+        padding: 0.75rem 1rem !important;
+        font-size: 0.88rem !important;
+        border-radius: 8px !important;
+    }
+
+    .video-placeholder p {
+        font-size: 0.95rem !important;
+    }
+
+    .video-placeholder i {
+        font-size: 3.5rem !important;
+    }
+}
+
+/* ------ Category selection cards ------ */
+@media (max-width: 767px) {
+    .category-card {
+        padding: 2rem 1.25rem !important;
+        border-radius: 20px !important;
+    }
+
+    .category-card:hover {
+        transform: none !important; /* disable hover lift on touch */
+    }
+
+    .category-title {
+        font-size: 1.5rem !important;
+    }
+
+    .category-icon {
+        width: 76px !important;
+        height: 76px !important;
+        margin-bottom: 1.25rem !important;
+    }
+
+    .category-icon i {
+        font-size: 2.2rem !important;
+    }
+
+    .thank-you-message {
+        padding: 1.25rem !important;
+        margin-bottom: 1.75rem !important;
+        border-radius: 14px !important;
+    }
+
+    .thank-you-message h3 {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* ------ Employee / Visitor form grids ------ */
+@media (max-width: 767px) {
+    .employee-form-grid,
+    .visitor-form-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .field-inline {
+        grid-template-columns: 1fr !important;
+    }
+
+    .btn-generate,
+    .btn-download,
+    .btn-home {
+        width: 100% !important;
+        justify-content: center !important;
+    }
+}
+
+/* ------ QR completion page ------ */
+@media (max-width: 767px) {
+    .qr-box {
+        padding: 1.25rem !important;
+        max-width: 230px !important;
+    }
+
+    .qr-footer {
+        padding: 1rem !important;
+    }
+}
+
+/* ------ Feedback grid (report-issue) ------ */
+@media (max-width: 767px) {
+    .feedback-grid {
+        gap: 1rem !important;
+    }
+
+    .feedback-card {
+        padding: 1.1rem !important;
+        border-radius: 18px !important;
+    }
+
+    .upload-wrap {
+        padding: 0.65rem !important;
+    }
+
+    .file-trigger {
+        font-size: 0.85rem !important;
+        padding: 0.5rem 0.85rem !important;
+        min-height: 44px !important;
+    }
+}
+
+/* ------ Footer on mobile ------ */
+@media (max-width: 767px) {
+    .ftrnvb {
+        justify-content: flex-start !important;
+    }
+}
+
+/* ------ Action links (index dashboard) ------ */
+@media (max-width: 767px) {
+    .action-link {
+        padding: 1rem 1.1rem !important;
+        border-radius: 16px !important;
+    }
+
+    .action-link .action-title {
+        font-size: 1rem !important;
+    }
+
+    .action-link .action-desc {
+        font-size: 0.82rem !important;
+    }
+}

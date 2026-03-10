@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="./assets/css/plugins.min.css">
 <link rel="stylesheet" href="./assets/css/style.min.css?=v2526551">
 <link rel="stylesheet" href="./assets/css/global.min.css?v=251548">
-<link rel="stylesheet" href="./assets/css/portal-overrides.css?v=20260225">
+<link rel="stylesheet" href="./assets/css/portal-overrides.css?v=20260310">
 
 <link rel="canonical" href="https://www.innovogroup.com/">
 
@@ -62,6 +62,10 @@
             .container-fluid {
                 padding-left: 1rem !important;
                 padding-right: 1rem !important;
+            }
+
+            section.ovrhdn {
+                padding-top: 75px !important;
             }
         }
 
@@ -360,6 +364,79 @@
             background: #122023;
             color: #ffffff;
             transform: translateY(-1px);
+        }
+
+        /* ===== Mobile (≤ 767 px) ===== */
+        @media (max-width: 767px) {
+            section.wrapper {
+                padding-top: 80px !important;
+            }
+
+            .container-fluid {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            .main-title {
+                font-size: 1.65rem;
+            }
+
+            .sub-title {
+                font-size: 0.95rem;
+            }
+
+            .success-icon {
+                width: 62px;
+                height: 62px;
+            }
+
+            .success-icon i {
+                font-size: 1.7rem;
+            }
+
+            .feedback-grid {
+                gap: 1rem;
+            }
+
+            .feedback-card {
+                padding: 1.1rem;
+                border-radius: 18px;
+            }
+
+            .feedback-head h3 {
+                font-size: 1rem;
+            }
+
+            .feedback-card input,
+            .feedback-card textarea,
+            .feedback-card select {
+                font-size: 16px;
+                min-height: 48px;
+            }
+
+            .feedback-card textarea {
+                min-height: 90px;
+            }
+
+            .upload-wrap {
+                padding: 0.65rem;
+            }
+
+            .file-trigger {
+                font-size: 0.85rem;
+                padding: 0.5rem 0.85rem;
+                min-height: 44px;
+            }
+
+            .btn-submit {
+                padding: 0.85rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .qr-container {
+                border-radius: 20px;
+                padding: 1.25rem;
+            }
         }
     </style>
 </head>
