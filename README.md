@@ -14,7 +14,7 @@ Open `index.html` in a browser, or serve the folder with any simple static serve
 
 ## GitHub Pages
 
-This repository is prepared to be hosted from the root of the `main` branch on GitHub Pages.
+This repository is prepared for GitHub Pages deployment from the `main` branch using the included GitHub Actions workflow.
 
 Expected site URL:
 
@@ -24,3 +24,4 @@ Expected site URL:
 
 - Internal Innovo corporate navigation links point to `https://www.innovogroup.com/...` so they do not break on GitHub Pages.
 - The landing page redirects visitors to `payments-invoices.html`.
+- If GitHub Pages is not already enabled for the repository, enable it once in repository settings and select `GitHub Actions` as the source.
