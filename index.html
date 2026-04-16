@@ -1,0 +1,1167 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="./">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Innovo Contractor Guidelines Portal - step-by-step guidance for contractors">
+<meta name="keywords" content="">
+<meta name="author" content="innovo">
+<meta name="robots" content="index, follow"><title>Innovo | Contractor Guidelines Portal</title>
+<meta name="robots" content="max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+<link rel="shortcut icon" href="./assets/img/favicon.ico">
+<link rel="stylesheet" href="./assets/css/plugins.min.css">
+<link rel="stylesheet" href="./assets/css/style.min.css?=v2526551">
+<link rel="stylesheet" href="./assets/css/global.min.css?v=251548">
+<link rel="stylesheet" href="./assets/css/portal-overrides.css?v=20260310">
+
+<link rel="canonical" href="https://beshoadel7878-prog.github.io/Contractor-Guidelines-Portal/">
+<script>
+    window.location.replace('payments-invoices.html');
+</script>
+<noscript>
+    <meta http-equiv="refresh" content="0; url=payments-invoices.html">
+</noscript>
+
+<!-- Google Tag Manager -->
+<script>
+(function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-KPF3PFQP');
+</script>
+<!-- End Google Tag Manager -->
+
+    <style>
+        /* ===== Ø£Ù†Ù…Ø§Ø· Ø¥Ø¶Ø§ÙÙŠØ© Ù„ØµÙØ­Ø© QR ===== */
+        .qr-page {
+            background:
+                linear-gradient(180deg, #f3f4f6 0%, #f5f6f8 100%) !important;
+        }
+
+        .qr-container {
+            width: 100%;
+            max-width: 1120px;
+            margin: 0 auto;
+            background: transparent;
+            border-radius: 0;
+            padding: 0;
+            box-shadow: none;
+            border: 0;
+            position: relative;
+            overflow: visible;
+            isolation: auto;
+        }
+
+        @media (max-width: 576px) {
+            .qr-container {
+                padding: 0;
+            }
+        }
+        
+        .qr-container::before {
+            content: none;
+        }
+
+        .qr-container > * {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .success-badge {
+            display: inline-block;
+            background: rgba(18, 32, 35, 0.05);
+            border: 1px solid rgba(18, 32, 35, 0.15);
+            color: #122023;
+            font-weight: 600;
+            padding: 0.5rem 2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            margin-bottom: 2rem;
+        }
+        
+        .success-icon {
+            width: 80px;
+            height: 80px;
+            background: #122023;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem;
+            animation: pulse 3s ease-in-out infinite;
+        }
+        
+        .success-icon i {
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(18, 32, 35, 0.3); }
+            50% { transform: scale(1.04); box-shadow: 0 0 0 12px rgba(18, 32, 35, 0); }
+        }
+        
+        .main-title {
+            font-size: clamp(2.05rem, 2.6vw, 2.8rem);
+            font-weight: 700;
+            color: #122023;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        
+        .sub-title {
+            color: #122023;
+            font-size: 1.08rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            max-width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.7;
+        }
+        
+        .qr-card {
+            background: transparent;
+            border-radius: 0;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            box-shadow: none;
+            position: relative;
+            z-index: 2;
+            overflow: visible;
+        }
+
+        .qr-card::before {
+            content: none;
+        }
+
+        @media (max-width: 576px) {
+            .qr-card {
+                padding: 0;
+            }
+        }
+        
+        .qr-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: #122023;
+            margin-bottom: 1.4rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 0.5rem 0.9rem;
+            border-radius: 999px;
+            background: rgba(18, 32, 35, 0.06);
+            border: 1px solid rgba(18, 32, 35, 0.12);
+        }
+
+        .qr-label::before {
+            content: '\f0a4';
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            font-size: 0.82rem;
+        }
+        
+        .qr-box {
+            width: clamp(240px, 26vw, 320px);
+            height: clamp(240px, 26vw, 320px);
+            margin: 0 auto 1.5rem;
+            background: #122023;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .qr-box::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(135deg, #122023 0%, #122023 100%);
+            opacity: 0.5;
+            z-index: 1;
+        }
+        
+        .qr-code {
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
+            background: #ffffff;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .qr-code span {
+            font-family: monospace;
+            font-size: 1rem;
+            color: #122023;
+            text-align: center;
+            line-height: 1.5;
+        }
+        
+        .qr-footer {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            color: #122023;
+            font-weight: 500;
+            margin-top: 1.1rem;
+            padding: 0.95rem 1rem;
+            border-radius: 14px;
+            border: 1px solid rgba(18, 32, 35, 0.1);
+            background: rgba(18, 32, 35, 0.04);
+        }
+
+        .qr-footer i {
+            font-size: 1.1rem;
+            color: #c5a572;
+        }
+        
+        .qr-footer small {
+            color: #122023;
+            font-size: 0.85rem;
+            opacity: 0.78;
+            margin: 0;
+            line-height: 1.45;
+        }
+        
+        .instructions {
+            background: white;
+            border-radius: 28px;
+            padding: 1.8rem;
+            box-shadow: 0 15px 30px -15px rgba(0,0,0,0.05);
+        }
+
+        .action-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        @media (min-width: 768px) {
+            .action-list {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1.2rem;
+            }
+        }
+
+        .action-link {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-areas:
+                "icon arrow"
+                "text text";
+            align-items: start;
+            gap: 1.3rem;
+            min-height: 200px;
+            padding: 2rem 2rem 2.1rem;
+            border-radius: 30px;
+            border: 1px solid rgba(18, 32, 35, 0.08);
+            background: #fcfcfd;
+            text-decoration: none;
+            color: #122023;
+            transition: all 0.22s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .action-link::before {
+            content: none;
+        }
+
+        .action-link:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 16px 28px -24px rgba(18, 32, 35, 0.28);
+            border-color: #86e8e6;
+        }
+
+        .action-link:hover::before {
+            content: none;
+        }
+
+        .action-link:focus-visible {
+            outline: 3px solid rgba(18, 32, 35, 0.26);
+            outline-offset: 2px;
+        }
+
+        .action-link.is-placeholder {
+            opacity: 0.65;
+            cursor: not-allowed;
+        }
+
+        .action-link.is-placeholder:hover {
+            transform: none;
+            box-shadow: none;
+            border-color: rgba(18, 32, 35, 0.1);
+        }
+
+        .action-link .instruction-icon {
+            grid-area: icon;
+            width: 64px;
+            height: 64px;
+            border-radius: 14px;
+            background: #eef6f7;
+            border: 0;
+            box-shadow: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.22s ease;
+            color: #122023;
+            font-size: 1.55rem;
+        }
+
+        .action-link .instruction-icon i {
+            line-height: 1;
+        }
+
+        .action-link .instruction-text {
+            grid-area: text;
+            align-self: center;
+        }
+
+        .action-link .instruction-text strong {
+            display: block;
+            font-size: 1.18rem;
+            margin-bottom: 0.15rem;
+        }
+
+        .action-link .instruction-text small {
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .action-link:hover .instruction-icon {
+            transform: translateY(-1px);
+            background: #122023 !important;
+            color: #86e8e6;
+        }
+
+        .action-link:hover .instruction-icon i {
+            color: #86e8e6;
+        }
+
+        .action-arrow {
+            grid-area: arrow;
+            align-self: start;
+            width: 46px;
+            height: 46px;
+            border-radius: 999px;
+            border: 1px solid rgba(18, 32, 35, 0.16);
+            color: #122023;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.05rem;
+            background: transparent;
+            transition: all 0.22s ease;
+        }
+
+        .action-link:hover .action-arrow {
+            transform: translateX(2px);
+            border-color: #86e8e6;
+            background: #86e8e6;
+            color: #122023;
+        }
+
+        .instruction-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #f0f3f5;
+        }
+
+        .instruction-item:last-child {
+            border-bottom: none;
+        }
+
+        .instruction-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(18, 32, 35, 0.05);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #122023;
+            font-size: 1.2rem;
+        }
+
+        .instruction-text {
+            flex: 1;
+        } 
+
+        .instruction-text strong {
+            display: block;
+            color: #122023;
+            font-size: 1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .instruction-text small {
+            color: #5f6c72;
+            font-size: 0.85rem;
+        }
+        
+        .ppe-list {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            justify-content: space-between;
+            margin: 0;
+            width: 100%;
+        }
+        
+        .ppe-item {
+            background: #ffffff;
+            border: 1px solid rgba(18, 32, 35, 0.08);
+            border-radius: 20px;
+            padding: 1rem 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            color: #122023;
+            font-weight: 500;
+            justify-content: center;
+            flex: 1;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .ppe-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -12px #122023;
+            border-color: rgba(18, 32, 35, 0.2);
+        }
+        
+        .ppe-item i {
+            color: #122023;
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .btn-download {
+            background: #122023;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 1rem 3rem;
+            border-radius: 100px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.1rem;
+            border: 2px solid #122023;
+            width: 100%;
+            justify-content: center;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .btn-download:hover {
+            background: transparent;
+            color: #122023;
+            transform: translateY(-2px);
+        }
+        
+        .btn-download:hover i {
+            transform: translateY(-2px);
+            color: #122023;
+        }
+        
+        .btn-home {
+            background: transparent;
+            color: #122023;
+            font-weight: 600;
+            padding: 1rem 3rem;
+            border-radius: 100px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.1rem;
+            border: 2px solid #122023;
+            width: 100%;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+
+        @media (max-width: 576px) {
+            .btn-download,
+            .btn-home {
+                padding: 0.9rem 1.25rem;
+                font-size: 1rem;
+            }
+            
+            .ppe-list {
+                flex-direction: column;
+            }
+
+            .buttons-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .btn-home:hover {
+            background: #122023;
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+        
+        .btn-home:hover i {
+            transform: translateX(-3px);
+            color: #ffffff;
+        }
+        
+        .buttons-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            justify-content: stretch;
+            margin-top: 1rem;
+        }
+        
+        .warning-note {
+            font-size: 0.9rem;
+            color: #122023;
+            text-align: center;
+            margin-top: 1rem;
+            opacity: 0.6;
+        }
+
+        /* ===== Layout: side-by-side ===== */
+        .qr-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2.5rem;
+            align-items: start;
+            margin-top: 2.25rem;
+        }
+
+        @media (min-width: 992px) {
+            .qr-grid {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 0;
+            }
+
+            .qr-col-left {
+                width: 100%;
+                max-width: none;
+                margin: 0 auto;
+            }
+
+            [dir="rtl"] .qr-col-left {
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+
+        .qr-col-left {
+            display: flex;
+            flex-direction: column;
+            gap: 1.75rem;
+            min-width: 0;
+        }
+
+        /* Make better use of space */
+        .container-fluid {
+            padding-left: 2.5rem !important;
+            padding-right: 2.5rem !important;
+        }
+
+        @media (min-width: 1400px) {
+            .container-fluid {
+                padding-left: 4rem !important;
+                padding-right: 4rem !important;
+            }
+        }
+
+        /* Vehicle preview styling */
+        .vehicle-preview {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255,255,255,0.7);
+            border-radius: 60px;
+            padding: 0.5rem 1rem;
+            border: 1px solid rgba(18, 32, 35, 0.05);
+            margin-top: 1.5rem;
+        }
+
+        .vehicle-icon {
+            width: 48px;
+            height: 48px;
+            background: rgba(18, 32, 35, 0.05);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #122023;
+            font-size: 1.3rem;
+            animation: pulse 2.5s infinite;
+        }
+
+        .vehicle-details {
+            flex: 1;
+        }
+
+        .vehicle-details .label {
+            font-size: 0.75rem;
+            color: #5f6c72;
+        }
+
+        .vehicle-details .value {
+            font-weight: 600;
+            color: #122023;
+            font-size: 1rem;
+        }
+
+        /* Welcome message styling */
+        .welcome-message {
+            background: linear-gradient(120deg, rgba(18, 32, 35, 0.02), #ffffff);
+            border-radius: 28px;
+            padding: 1.8rem;
+            border-left: 6px solid #122023;
+        }
+
+        .welcome-message h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #122023;
+            margin-bottom: 0.8rem;
+        }
+
+        .welcome-message h1 i {
+            color: #122023;
+            font-size: 2rem;
+            margin-left: 0.5rem;
+            opacity: 0.7;
+        }
+
+        .welcome-message p {
+            color: #122023;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+
+        .highlight {
+            background: rgba(18, 32, 35, 0.05);
+            padding: 0.5rem 1rem;
+            border-radius: 100px;
+            display: inline-block;
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: #122023;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        /* Mobile refinements */
+        @media (max-width: 576px) {
+            .container-fluid {
+                padding-left: 1rem !important;
+                padding-right: 1rem !important;
+            }
+
+            .qr-page {
+                padding-top: 100px !important;
+            }
+
+            .success-badge {
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+                padding: 0.4rem 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .success-icon {
+                width: 64px;
+                height: 64px;
+                margin-bottom: 1.5rem;
+            }
+
+            .success-icon i {
+                font-size: 2rem;
+            }
+
+            .main-title {
+                font-size: 1.7rem;
+            }
+
+            .sub-title {
+                font-size: 0.95rem;
+                margin-bottom: 1.5rem;
+            }
+
+            .qr-grid {
+                gap: 1.75rem;
+            }
+
+            .qr-box {
+                width: 100%;
+                max-width: 240px;
+                height: auto;
+                aspect-ratio: 1 / 1;
+            }
+
+            .qr-code span {
+                font-size: 0.9rem;
+            }
+
+            .vehicle-preview {
+                flex-direction: column;
+                align-items: flex-start;
+                border-radius: 24px;
+                gap: 0.75rem;
+                padding: 0.75rem 1rem;
+            }
+
+            .vehicle-preview > i {
+                align-self: flex-start;
+            }
+
+            .instructions {
+                padding: 1.25rem;
+                border-radius: 22px;
+            }
+
+            .instruction-item {
+                align-items: flex-start;
+                gap: 0.75rem;
+            }
+
+            .instruction-icon {
+                width: 36px;
+                height: 36px;
+                border-radius: 12px;
+                font-size: 1.05rem;
+            }
+
+            .action-list {
+                grid-template-columns: 1fr;
+            }
+
+            .action-link {
+                grid-template-columns: 40px minmax(0, 1fr);
+                align-items: start;
+                padding: 0.9rem 2.9rem 0.95rem 1rem;
+                gap: 0.7rem;
+                border-radius: 16px;
+                min-height: 0;
+            }
+
+            .action-link .instruction-icon {
+                width: 40px;
+                height: 40px;
+                border-radius: 12px;
+                font-size: 1.05rem;
+                margin-top: 0.15rem;
+            }
+
+            .action-link .instruction-text {
+                min-width: 0;
+            }
+
+            .action-link .instruction-text strong {
+                font-size: 1rem;
+                line-height: 1.25;
+                margin-bottom: 0.2rem;
+            }
+
+            .action-link .instruction-text small {
+                font-size: 0.84rem;
+                line-height: 1.35;
+            }
+
+            .action-arrow {
+                position: absolute;
+                top: 0.9rem;
+                right: 0.85rem;
+                width: 28px;
+                height: 28px;
+                border-radius: 9px;
+                font-size: 0.74rem;
+            }
+
+            [dir="rtl"] .action-link {
+                padding-right: 1rem;
+                padding-left: 2.9rem;
+            }
+
+            [dir="rtl"] .action-arrow {
+                right: auto;
+                left: 0.85rem;
+            }
+
+            .qr-footer {
+                align-items: flex-start;
+                padding: 0.85rem;
+            }
+
+            .warning-note {
+                font-size: 0.8rem;
+            }
+
+            .buttons-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== 577–767 px (portrait tablets & large phones) ===== */
+        @media (min-width: 577px) and (max-width: 767px) {
+            .action-link {
+                grid-template-columns: 44px minmax(0, 1fr) auto;
+                min-height: 72px;
+                padding: 1rem 1.1rem;
+                gap: 0.75rem;
+            }
+
+            .action-link .instruction-icon {
+                width: 44px;
+                height: 44px;
+                border-radius: 14px;
+                font-size: 1.2rem;
+            }
+
+            .action-arrow {
+                width: 30px;
+                height: 30px;
+                font-size: 0.76rem;
+            }
+
+            .instructions {
+                padding: 1.4rem;
+                border-radius: 22px;
+            }
+
+            .ppe-list {
+                flex-wrap: wrap;
+            }
+
+            .ppe-item {
+                flex: 0 0 calc(50% - 0.5rem);
+            }
+        }
+
+        /* ===== Match reference card icon style ===== */
+        .action-link .instruction-icon {
+            background: #eef6f7 !important;
+            border: 0 !important;
+            box-shadow: none !important;
+            border-radius: 14px !important;
+            width: 64px !important;
+            height: 64px !important;
+            padding: 0 !important;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .action-link .instruction-icon i {
+            font-size: 1.55rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KPF3PFQP" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- ======= Ø§Ù„Ù‡ÙŠØ¯Ø± (Ù…Ø·Ø§Ø¨Ù‚ Ù„Ù„Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ø£ØµÙ„ÙŠ) ======= -->
+<header class="wrapper bg-soft-primary">
+    <nav class="navbar navbar-expand-lg center-nav transparent position-absolute navbar-dark caret-none">
+        <div class="container-fluid flex-lg-column px-lg-8">
+            <div class="navbar-collapse-wrapper bg-secondary d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center mnavsc">
+                <div class="navbar-brand w-100">
+                    <a href="https://www.innovogroup.com" aria-label="innovogroup">
+                        <img src="./assets/img/logo.svg" srcset="./assets/img/logo.svg 2x" alt="">
+                    </a>
+                </div>
+                <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                    <div class="offcanvas-header d-lg-none">
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                        <ul class="navbar-nav mnnav">
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="https://www.innovogroup.com/about-us">Who We Are <i class="fa fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/about-us"><img src="./assets/img/icons/menu/who-we-are/company-overview.svg" class="mnuic" alt=""> About Us</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/board-of-directors"><img src="./assets/img/icons/menu/who-we-are/board-of-directors.svg" class="mnuic" alt="">Board of Directors</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/our-people"><img src="./assets/img/icons/menu/who-we-are/our-people.svg" class="mnuic" alt=""> Our People</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="https://www.innovogroup.com/construction">What We Do <i class="fa fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown dropdown-submenu dropend">
+                                        <a class="dropdown-item dropdown-toggle d-none d-lg-block" href="https://www.innovogroup.com/construction"><img src="./assets/img/icons/menu/our-industries/construction.svg" class="mnuic" alt="">Construction</a>
+                                        <ul class="dropdown-menu sblst">
+                                            <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/construction">Build</a></li>
+                                            <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/mep">MEP</a></li>
+                                            <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/infrastructure-roads-marine-works">Infrastructure, Roads & Marine works</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/real-estate-development"><img src="./assets/img/icons/menu/our-industries/real-estate.svg" class="mnuic" alt="">Real Estate Development</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/technology-solutions">Technology Solutions</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/export-finance"><img src="./assets/img/icons/menu/our-industries/capital-projects.svg" class="mnuic" alt="">Export Finance</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/procurement-distribution"><img src="./assets/img/icons/menu/our-industries/procurement-distribution.svg" class="mnuic" alt="">Procurement & Distribution</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/investment-vc"><img src="./assets/img/icons/menu/our-industries/investment-venture-capital.svg" class="mnuic" alt="">Investment & Venture Capital</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.innovogroup.com/projects">Our Projects</a></li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="https://www.innovogroup.com/innovation">Commitments <i class="fa fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/innovation"><img src="./assets/img/icons/menu/our-commitments/innovation-technology.svg" class="mnuic" alt="">Innovation</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/hse"><img src="./assets/img/icons/menu/our-commitments/health-safety-environment.svg" class="mnuic" alt="">Health, Safety & Environment</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="https://www.innovogroup.com/sustainability">Sustainability <i class="fa fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/sustainability"><img src="./assets/img/icons/menu/sustainability/environment.svg" class="mnuic" alt="">Overview </a></li>
+                                    <li class="dropdown dropdown-submenu dropend">
+                                        <a class="dropdown-item dropdown-toggle d-none d-lg-block" href="https://www.innovogroup.com/esg"><img src="./assets/img/icons/menu/sustainability/environment.svg" class="mnuic" alt="">ESG</a>
+                                        <ul class="dropdown-menu sblst">
+                                            <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/esg#tab3-1">Environmental</a></li>
+                                            <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/esg#tab3-2">Social</a></li>
+                                            <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/esg#tab3-3">Governance</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/decarbonization-strategy"><img src="./assets/img/icons/menu/sustainability/carbon-footprint.svg" class="mnuic" alt="">Decarbonisation Strategy</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/un-race-to-zero"><img src="./assets/img/icons/menu/sustainability/un-race-to-zero.svg" class="mnuic" alt="">UN Race to Zero </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Media Centre <i class="fa fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/news">News</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/knowledge-hub">Knowledge Hub</a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/gallery">Gallery</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="https://www.innovogroup.com/careers">Careers <i class="fa fa-chevron-down"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="dropdown-item" href="https://www.innovogroup.com/careers">Working at Innovo </a></li>
+                                    <li class="nav-item"><a class="dropdown-item" href="https://careers.innovogroup.com/">Innovo Careers </a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="https://www.innovogroup.com/contact">Contact</a></li>
+                        </ul>
+                        <div class="offcanvas-footer d-lg-none">
+                            <div>
+                                <nav class="nav social social-dark mt-4">
+                                    <a href="https://www.linkedin.com/company/theinnovogroup/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://www.instagram.com/theinnovogroup/" target="_blank"><i class="uil uil-instagram"></i></a>
+                                    <a href="https://www.facebook.com/profile.php?id=61577709663735" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                                    <a href="https://www.youtube.com/@theinnovogroup" target="_blank"><i class="uil uil-youtube"></i></a>
+                                    <a href="https://x.com/Innovo_Group" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-other d-flex ms-auto">
+                    <ul class="navbar-nav flex-row align-items-center ms-auto">
+                        <li class="nav-item srchbtn">
+                            <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-search"><i class="uil uil-search"></i></a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <button class="hamburger offcanvas-nav-btn"><span></span></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-top bg-light" id="offcanvas-search" data-bs-scroll="true">
+        <div class="container d-flex flex-row py-6">
+            <form class="search-form w-100" method="get" action="https://www.innovogroup.com/search-results.php">
+                <input id="search-form" type="text" name="keyword" class="form-control" placeholder="Type keyword and hit enter" value="">
+            </form>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+    </div>
+</header>
+
+        <!-- ===== Ø§Ù„Ù…Ø­ØªÙˆÙ‰ Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠ ===== -->
+        <section class="wrapper bg-white ovrhdn qr-page" style="padding-top: 120px;">
+            <div class="container-fluid py-10 py-lg-15">
+                
+                <div class="qr-container">
+                  
+                    
+                    <!-- Success Icon -->
+                    <div class="success-icon">
+                        <i class="uil uil-qrcode-scan"></i>
+                    </div>
+                    
+                    <!-- Main Title -->
+                    <h1 class="main-title">Contractor Guidelines Portal</h1>
+                    <p class="sub-title">This portal provides step-by-step guidance for contractors.</p>
+
+                    <div class="qr-grid">
+                        <div class="qr-col-left">
+                    
+                    <!-- Quick Actions Card -->
+                    <div class="qr-card">
+                        <div class="qr-label">Guidance Topics</div>
+                        <div class="action-list">
+                            <a class="action-link action-link-payments" href="payments-invoices.html">
+                                <div class="instruction-icon">
+                                    <i class="uil uil-file-alt"></i>
+                                </div>
+                                <div class="instruction-text">
+                                    <strong>Open Contractor Guidelines Portal</strong>
+                                    <small>View the contractor guidance topics and requirements.</small>
+                                </div>
+                                <span class="action-arrow" aria-hidden="true"><i class="uil uil-arrow-right"></i></span>
+                            </a>
+                        </div>
+                     
+                    </div>
+                        </div>
+                    </div>
+
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+<!-- ======= Ø§Ù„ÙÙˆØªØ± (Ù…Ø·Ø§Ø¨Ù‚ Ù„Ù„Ù…ÙˆÙ‚Ø¹ Ø§Ù„Ø£ØµÙ„ÙŠ) ======= -->
+<footer class="bg-secondary mnftrs ovrhdn">
+    <div class="container">
+        <div class="row gy-6 gy-lg-0" data-cues="slideInRight">
+            <div class="col-lg-3">
+                <img class="mb-lg-7 mb-5 ftrlg" src="./assets/img/logo.svg" alt=""><br>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <ul class="list-unstyled text-reset mb-0">
+                            <li><a href="https://www.innovogroup.com/about-us">About Us</a></li>
+                            <li><a href="https://www.innovogroup.com/projects">Projects</a></li>
+                            <li><a href="https://www.innovogroup.com/careers">Careers</a></li>
+                            <li><a href="https://www.innovogroup.com/sustainability">Sustainability</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-6">
+                        <ul class="list-unstyled text-reset mb-0">
+                            <li><a href="https://www.innovogroup.com/innovation">Innovation</a></li>
+                            <li><a href="https://www.innovogroup.com/contact">Contact Us</a></li>
+                            <li><a href="https://www.innovogroup.com/hse">HSE</a></li>
+                            <li><a href="https://www.innovogroup.com/our-people">Our People</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5 col-12">
+                        <ul class="list-unstyled text-reset mb-0">
+                            <li><a href="vendor-portal">Vendor Portal</a></li>
+                            <li><a href="assets/pdf/Innovo_Code_of_Business_Conduct_F.pdf" target="_blank">Code of Business Conduct</a></li>
+                            <li><a href="assets/pdf/innovo-i-holding-limited-tax-strategy-2025.pdf" target="_blank">Tax Strategy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="widget text-lg-end">
+                    <nav class="nav social text-md-end d-flex justify-content-lg-end mb-lg-6 mb-6 ftrnvb">
+                        <a href="https://www.linkedin.com/company/theinnovogroup/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/theinnovogroup/" target="_blank"><i class="uil uil-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61577709663735" target="_blank"><i class="uil uil-facebook-f"></i></a>
+                        <a href="https://www.youtube.com/@theinnovogroup" target="_blank"><i class="uil uil-youtube"></i></a>
+                        <a href="https://x.com/Innovo_Group" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="ftrbtm">
+            <div class="row">
+                <div class="col-lg-8 order-lg-2">
+                    <ul class="d-md-flex justify-content-md-end list-unstyle ftrbtmn mb-3 mb-lg-0">
+                        <li><a href="terms-and-conditions">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy">Privacy & Cookie Policy</a></li>
+                        <li><a href="modern-slavery-statement">Modern Slavery Statement</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 order-lg-1">
+                    <p class="mb-0">Â© INNOVO 2026 All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+</div>
+
+    <!-- Ø§Ù„Ø³ÙƒØ±ÙŠØ¨ØªØ§Øª -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="./assets/js/plugins-min.js"></script>
+    <script src="./assets/js/theme.js?v=5215155"></script>
+    <script src="./assets/js/global.js?v=5215155"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <script>
+        function downloadQR() {
+            // ÙÙŠ Ø§Ù„ØªØ·Ø¨ÙŠÙ‚ Ø§Ù„ÙØ¹Ù„ÙŠØŒ Ù‡Ù†Ø§ Ù‡ÙŠÙƒÙˆÙ† ÙÙŠ ÙƒÙˆØ¯ Ù„ØªØ­Ù…ÙŠÙ„ QR ÙƒØµÙˆØ±Ø©
+            alert(window.InductionI18n ? window.InductionI18n.t('alert_download_start') : 'QR code download would start here. In a real implementation, this would generate and download a QR image.');
+            
+            // Ù…Ø«Ø§Ù„ Ø¨Ø³ÙŠØ· Ù„ÙØªØ­ QR ÙÙŠ Ù†Ø§ÙØ°Ø© Ø¬Ø¯ÙŠØ¯Ø© (Ù„Ù„ØªØ¬Ø±Ø¨Ø©)
+            const qrText = 'INNOVO - Site Access QR';
+            alert(window.InductionI18n ? window.InductionI18n.t('alert_qr_ready') : 'Your QR code is ready. Present it at the gate.');
+        }
+        
+        // Entry animation
+        window.onload = function() {
+            const elements = document.querySelectorAll('.qr-card, .action-link');
+            elements.forEach((el, index) => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    el.style.transition = 'all 0.45s ease';
+                    el.style.opacity = '1';
+                    el.style.transform = 'translateY(0)';
+                }, 80 * index);
+            });
+        };
+    </script>
+</body>
+
+</html>
